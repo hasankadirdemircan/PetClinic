@@ -1,4 +1,4 @@
-package com.hkdemircan.petclinc.model;
+package com.hkdemircan.model;
 
 import java.util.Date;
 
