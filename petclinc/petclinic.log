@@ -1,0 +1,18 @@
+2019-03-01 14:37:08.571  INFO 12809 --- [restartedMain] c.h.petclinc.PetclincApplication         : Starting PetclincApplication on hkdemircan with PID 12809 (/home/hkdemircan/Desktop/Java-Project/PetClinc/PetClinic/petclinc/target/classes started by hkdemircan in /home/hkdemircan/Desktop/Java-Project/PetClinc/PetClinic/petclinc)
+2019-03-01 14:37:08.573  INFO 12809 --- [restartedMain] c.h.petclinc.PetclincApplication         : No active profile set, falling back to default profiles: default
+2019-03-01 14:37:08.600  INFO 12809 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-01 14:37:08.600  INFO 12809 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-01 14:37:09.494  INFO 12809 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-01 14:37:09.507  INFO 12809 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-01 14:37:09.508  INFO 12809 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-01 14:37:09.511  INFO 12809 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-01 14:37:09.544  INFO 12809 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-01 14:37:09.545  INFO 12809 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 944 ms
+2019-03-01 14:37:09.816  INFO 12809 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-01 14:37:10.006  INFO 12809 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-03-01 14:37:10.011  INFO 12809 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-01 14:37:10.049  INFO 12809 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-01 14:37:10.050  INFO 12809 --- [restartedMain] c.h.petclinc.PetclincApplication         : Started PetclincApplication in 1.754 seconds (JVM running for 2.123)
+2019-03-01 14:37:10.555  INFO 12809 --- [RMI TCP Connection(1)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-01 14:37:10.555  INFO 12809 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-01 14:37:10.560  INFO 12809 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
