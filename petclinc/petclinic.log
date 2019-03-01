@@ -169,3 +169,11 @@
 2019-03-01 17:25:10.529  INFO 24465 --- [RMI TCP Connection(3)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2019-03-01 17:25:10.529  INFO 24465 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-03-01 17:25:10.533  INFO 24465 --- [RMI TCP Connection(3)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-03-01 17:38:40.357  INFO 24465 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-01 17:39:47.837  INFO 26182 --- [main] c.h.petclinc.PetclincApplicationTests    : Starting PetclincApplicationTests on hkdemircan with PID 26182 (started by hkdemircan in /home/hkdemircan/Desktop/Java-Project/PetClinc/PetClinic/petclinc)
+2019-03-01 17:39:47.838  INFO 26182 --- [main] c.h.petclinc.PetclincApplicationTests    : No active profile set, falling back to default profiles: default
+2019-03-01 17:39:49.108  INFO 26182 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-01 17:39:49.278  INFO 26182 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-03-01 17:39:49.638  INFO 26182 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-01 17:39:49.683  INFO 26182 --- [main] c.h.petclinc.PetclincApplicationTests    : Started PetclincApplicationTests in 2.097 seconds (JVM running for 2.657)
+2019-03-01 17:39:49.898  INFO 26182 --- [Thread-5] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
