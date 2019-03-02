@@ -1,8 +1,8 @@
-logging:
-  level:
-    org:
-      springframework:
-        security: DEBUG
-    hibernate: DEBUG
-
-  file: petclinic.log
+#logging:
+ # level:
+  #  org:
+   #   springframework:
+    #    security: DEBUG
+ #   hibernate: DEBUG
+#
+  #file: petclinic.log
