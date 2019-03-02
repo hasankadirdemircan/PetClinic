@@ -19,3 +19,24 @@
 2019-03-02 13:24:35.052  INFO 7071 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2019-03-02 13:24:35.058  INFO 7071 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
 2019-03-02 13:26:13.399  INFO 7071 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-03-02 13:33:11.970  INFO 8263 --- [restartedMain] c.h.petclinc.PetclincApplication         : Starting PetclincApplication on hkdemircan with PID 8263 (/home/hkdemircan/Desktop/Java-Project/PetClinc/PetClinic/petclinc/target/classes started by hkdemircan in /home/hkdemircan/Desktop/Java-Project/PetClinc/PetClinic/petclinc)
+2019-03-02 13:33:11.972  INFO 8263 --- [restartedMain] c.h.petclinc.PetclincApplication         : No active profile set, falling back to default profiles: default
+2019-03-02 13:33:12.003  INFO 8263 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2019-03-02 13:33:12.003  INFO 8263 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2019-03-02 13:33:13.012  INFO 8263 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-03-02 13:33:13.026  INFO 8263 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-03-02 13:33:13.026  INFO 8263 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.16]
+2019-03-02 13:33:13.030  INFO 8263 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+2019-03-02 13:33:13.142  INFO 8263 --- [restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-03-02 13:33:13.145  INFO 8263 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-03-02 13:33:13.145  INFO 8263 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1142 ms
+2019-03-02 13:33:13.515  INFO 8263 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-03-02 13:33:13.572  INFO 8263 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [public/index.html]
+2019-03-02 13:33:13.674  INFO 8263 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2019-03-02 13:33:13.679  INFO 8263 --- [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-03-02 13:33:13.725  INFO 8263 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-03-02 13:33:13.727  INFO 8263 --- [restartedMain] c.h.petclinc.PetclincApplication         : Started PetclincApplication in 2.017 seconds (JVM running for 2.424)
+2019-03-02 13:33:14.068  INFO 8263 --- [RMI TCP Connection(2)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-03-02 13:33:14.069  INFO 8263 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-03-02 13:33:14.073  INFO 8263 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2019-03-02 13:33:42.587  INFO 8263 --- [Thread-14] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
