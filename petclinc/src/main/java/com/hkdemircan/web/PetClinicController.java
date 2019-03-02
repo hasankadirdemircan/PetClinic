@@ -1,4 +1,4 @@
-package com.hkdemircan.controller;
+package com.hkdemircan.web;
 
 import com.hkdemircan.service.PetClinicService;
 import org.springframework.beans.factory.annotation.Autowired;
