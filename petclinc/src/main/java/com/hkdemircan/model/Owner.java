@@ -1,8 +1,13 @@
 package com.hkdemircan.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.XmlTransient;
 import java.util.HashSet;
 import java.util.Set;
 
+@XmlRootElement
 public class Owner {
     private long id;
     private String firstName;
@@ -11,6 +16,8 @@ public class Owner {
 
     private Set<Pet> pets = new HashSet<>();
 
+    @XmlTransient
+    @JsonIgnore
     public Set<Pet> getPets() {
         return pets;
     }
