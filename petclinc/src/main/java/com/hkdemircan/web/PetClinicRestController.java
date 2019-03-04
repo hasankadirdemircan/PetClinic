@@ -5,6 +5,9 @@ import com.hkdemircan.exception.OwnerNotFoundException;
 import com.hkdemircan.model.Owner;
 import com.hkdemircan.service.PetClinicService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.hateoas.Link;
+import org.springframework.hateoas.Resource;
+import org.springframework.hateoas.mvc.ControllerLinkBuilder;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -75,6 +78,23 @@ public class PetClinicRestController {
         try{
             Owner owner = petClinicService.findOwner(id);
             return ResponseEntity.ok(owner);
+        }catch (OwnerNotFoundException ex){
+            return ResponseEntity.notFound().build();
+        }
+
+    }
+
+    @RequestMapping(method = RequestMethod.GET, value = "/owner/{id}", produces = "application/json")
+    public ResponseEntity<?> getOwnerAsHateoasResource(@PathVariable("id") Long id){
+        try{
+            Owner owner = petClinicService.findOwner(id);
+            Link self = ControllerLinkBuilder.linkTo(PetClinicRestController.class).slash("/owner/" + id).withSelfRel();
+            Link create = ControllerLinkBuilder.linkTo(PetClinicRestController.class).slash("/owner").withRel("create");
+            Link update = ControllerLinkBuilder.linkTo(PetClinicRestController.class).slash("/owner/" + id).withRel("update");
+            Link delete = ControllerLinkBuilder.linkTo(PetClinicRestController.class).slash("/owner/" + id).withRel("delete");
+            Resource<Owner> resource = new Resource<Owner>(owner,self,create,update,delete);
+            
+            return ResponseEntity.ok(resource);
         }catch (OwnerNotFoundException ex){
             return ResponseEntity.notFound().build();
         }
