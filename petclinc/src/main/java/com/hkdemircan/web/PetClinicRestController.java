@@ -1,5 +1,6 @@
 package com.hkdemircan.web;
 
+import com.hkdemircan.exception.InternalServerException;
 import com.hkdemircan.exception.OwnerNotFoundException;
 import com.hkdemircan.model.Owner;
 import com.hkdemircan.service.PetClinicService;
@@ -24,9 +25,9 @@ public class PetClinicRestController {
             petClinicService.deleteOwner(id);
             return ResponseEntity.ok().build();
         }catch (OwnerNotFoundException ex){
-            return ResponseEntity.notFound().build();
+            throw  ex;
         }catch (Exception ex){
-            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+         throw new InternalServerException(ex);
         }
     }
 

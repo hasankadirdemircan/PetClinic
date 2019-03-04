@@ -1,19 +1,21 @@
 package com.hkdemircan.petclinc;
 
 import com.hkdemircan.model.Owner;
+import org.hamcrest.Matcher;
 import org.hamcrest.MatcherAssert;
 import org.hamcrest.Matchers;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
+import sun.net.www.http.HttpClient;
 
 import java.net.URI;
 import java.util.List;
 import java.util.Map;
-import java.util.regex.Matcher;
 import java.util.stream.Collectors;
 
 public class PetClinicRestControllerTest {
@@ -83,8 +85,8 @@ public class PetClinicRestControllerTest {
         try{
             ResponseEntity<Owner> owner = restTemplate.getForEntity("http://localhost:8080/rest/owner/1", Owner.class);
             Assert.fail("should have not returned owner");
-        }catch (RestClientException ex){
-
+        }catch (HttpClientErrorException ex){
+            MatcherAssert.assertThat(ex.getStatusCode().value(), Matchers.equalTo(404));
         }
 
 
